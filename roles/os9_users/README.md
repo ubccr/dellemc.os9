@@ -26,7 +26,7 @@ Role variables
 | ``role`` | string                    | Configures the role assigned to the user | os9 |
 | ``privilege`` | int                | Configures the privilege level for the user (0 to 15); if this key is ommitted, the default privilege is 1 for both os9 | os9  |
 | ``access_class`` | string       | Configures the access-class for the user | os9 |
-| ``pass_key`` | integer: 0\*,7 | Configures the password as encrypted if set to 7 in os9 devices | os9 |
+| ``pass_key`` | integer: 0\*,7,8 | Configures the password as encrypted if set to 7 or sha256-password if set to 8 in os9 devices | os9 |
 | ``secret`` | string | Configures line password as secret in os9 devices | os9 |
 | ``secret_key`` | integer: 0\*,5 | Configures the secret line password using md5 encrypted algorithm | os9 |
 | ``state`` | string: absent,present\*     | Deletes a user account if set to absent  | os9 |
