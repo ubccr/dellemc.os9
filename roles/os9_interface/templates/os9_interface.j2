@@ -224,6 +224,12 @@ interface {{ key }}
       {% endfor %}
     {% endif %}
 
+  {% if intf_vars.raw_cli is defined %}
+    {% for raw in intf_vars.raw_cli %}
+ {{ raw }}
+    {% endfor %}
+  {% endif %}
+
     {% if intf_vars.admin is defined %}
       {% if intf_vars.admin == "up" %}
  no shutdown
